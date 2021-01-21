@@ -92,39 +92,29 @@ div {
           <td><?= $value['annee']; ?></td>
           <td><?= $value['titre']; ?></td>
           <td>
-            <a>Editer</a>
+            <button>Editer</button>
           </td>
           <td>
-            <a>Supprimer</a>
+            <button>Supprimer</button>
           </td>
         </tr>
       <?php endforeach; ?>
     </tbody>
   </table>
   <div>
-  <form action="" method="post">
-    <label for="auteur">Auteur</label>
-    <input type="text" id="auteur" name="auteur" placeholder="Auteur..">
+    <form action="" method="post">
+      <label for="auteur">Auteur</label>
+      <input type="text" id="auteur" name="auteur" placeholder="Auteur..">
 
-    <label for="annee">Année</label>
-    <input type="text" id="annee" name="annee" placeholder="Année..">
+      <label for="annee">Année</label>
+      <input type="text" id="annee" name="annee" placeholder="Année..">
 
-    <label for="titre">Titre</label>
-    <input type="text" id="titre" name="titre" placeholder="Titre..">
+      <label for="titre">Titre</label>
+      <input type="text" id="titre" name="titre" placeholder="Titre..">
 
-    <input type="submit" name="ok" value="Valider">
-  </form>
-  <?php
-  if(isset($_POST['ok'])){
-  //   $array = [
-  //     $_POST['auteur'],$_POST['annee'],$_POST['titre']
-  //   ];
-  //   $all->create($array);
-  // }
-  $all->create();
-   ?>
-
-</div>
+      <input type="submit" name="ok" value="Valider">
+    </form>
+  </div>
   <!-- <div>
     <a><button class="btn btn-primary">Ajouter</button></a>
   </div> -->
